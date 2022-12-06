@@ -81,6 +81,28 @@ pip install git+https://github.com/tsyet12/ASCA
 ![Figure_3](https://user-images.githubusercontent.com/19692103/205872428-245e778e-c805-4dfc-b5d4-0af7c890c9f2.png)
 
 
+```python
+# How the variables are syntaxed
+ASCA.factors
+ASCA.factors_explained
+ASCA.factors_loadings
+ASCA.factors_projected
+ASCA.factors_scores
+ASCA.factors_singular
+
+ASCA.interactions
+ASCA.interaction_explained
+ASCA.interaction_loadings
+ASCA.interaction_projected
+ASCA.interaction_scores
+ASCA.factors_singular
+
+ASCA.residuals
+ASCA.effects
+
+```
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
