@@ -72,6 +72,12 @@ pip install git+https://github.com/tsyet12/ASCA
 
 ```
 
+![Figure_1](https://user-images.githubusercontent.com/19692103/205869997-30939e99-47e4-4b53-83e5-b5ea4b4937b0.png)
+
+![Figure_2](https://user-images.githubusercontent.com/19692103/205870009-0df363e6-7be7-4dea-a7cb-ab51cfc4fc49.png)
+
+![Figure_3](https://user-images.githubusercontent.com/19692103/205870023-6ceb4ddc-6f81-4560-b128-137662d44206.png)
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
