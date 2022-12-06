@@ -34,7 +34,7 @@ pip install git+https://github.com/tsyet12/ASCA
 
 
 ### Simple Example
-'''python
+```python
 
     X = [[1.0000,0.6000], 
     [3.0000,0.4000],
@@ -70,7 +70,7 @@ pip install git+https://github.com/tsyet12/ASCA
     ASCA.plot_factors()
     ASCA.plot_interactions()
 
-'''
+```
 
 
 <!-- CONTRIBUTING -->
