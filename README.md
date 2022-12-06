@@ -1,4 +1,5 @@
 # ASCA: ANOVA-Simultaneous Component Analysis in Python
+[![DOI](https://zenodo.org/badge/569291256.svg)](https://zenodo.org/badge/latestdoi/569291256)
 
 
 <!-- TABLE OF CONTENTS -->
