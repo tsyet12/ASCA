@@ -138,3 +138,6 @@ Jansen, Jeroen J., et al. "ASCA: analysis of multivariate data obtained from an 
 
 ## Acknowledgements
 The research contribution from S.Y. Teng is supported by the European Union's Horizon Europe Research and Innovation Program, under Marie Skłodowska-Curie Actions grant agreement no. 101064585 (MoCEGS).
+
+## Cite this software
+Sin Yong Teng. (2022). tsyet12/ASCA: ASCA ANOVA-Simultaneous Component Analysis (v1.0). Zenodo. https://doi.org/10.5281/zenodo.7404343
