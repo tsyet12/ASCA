@@ -6,7 +6,7 @@
 
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
-* [Usage Examples](#usage-examples)
+* [Simple Examples](#simple-examples)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
