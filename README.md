@@ -15,7 +15,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-I am making ASCA in Python because nobody likes to code ASCA.
+ASCA is a multivariate approach to the standard ANOVA, using simultaneous component analysis to interprete the underlying factors and interaction from a design of experiment dataset. This project implements ASCA in python to support open source development and a wider application of ASCA.
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
