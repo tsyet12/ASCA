@@ -96,7 +96,7 @@ ASCA.interaction_explained
 ASCA.interaction_loadings
 ASCA.interaction_projected
 ASCA.interaction_scores
-ASCA.factors_singular
+ASCA.interaction_singular
 
 ASCA.residuals
 ASCA.effects
