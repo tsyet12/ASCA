@@ -5,6 +5,7 @@ from matplotlib.markers import MarkerStyle
 import matplotlib.cm as cm
 from scipy.spatial import ConvexHull
 import math
+import itertools
 class ASCA(BaseEstimator):
     def __init__(self):
         self.__name__='ASCA'
@@ -132,7 +133,7 @@ class ASCA(BaseEstimator):
           X_effect.append(np.zeros_like(Xm))
           for f in factor_set:
               select=F[:,effect]==f
-              select_mat=np.where([select,select],Xm.T,zero.T).T
+              select_mat=np.where([select]*Xm.T.shape[0],Xm.T,zero.T).T
               select_avg=np.sum(select_mat,axis=0)/(sum(select)+np.finfo(float).eps) #average avoiding empty entry
               select_mat[select_mat.nonzero()]=1 #set all as 1
               X_effect[effect]=X_effect[effect]+select_mat*select_avg
@@ -147,15 +148,16 @@ class ASCA(BaseEstimator):
         
         #Calculate Interactions
         X_interact=[]
+
+        combination_factor_set=list(itertools.combinations(list(factor_set), F.shape[0]))
         for inter in range(len(interactions)):
           X_interact.append(np.zeros_like(Xm))
-          for f1 in factor_set:
-            for f2 in factor_set:
-              select=np.sum(F==[f1,f2],axis=1)==2
-              select_mat=np.where([select,select],Xm.T,zero.T).T
-              select_avg=np.sum(select_mat,axis=0)/(sum(select)+np.finfo(float).eps) #average avoiding empty entry
-              select_mat[select_mat.nonzero()]=1 #set all as 1
-              X_interact[inter]=X_interact[inter]+select_mat*select_avg-select_mat*Total_effect
+          for ff in combination_factor_set:
+            select=np.sum(F==list(ff),axis=1)==F.shape[0]
+            select_mat=np.where([select]*Xm.T.shape[0],Xm.T,zero.T).T
+            select_avg=np.sum(select_mat,axis=0)/(sum(select)+np.finfo(float).eps) #average avoiding empty entry
+            select_mat[select_mat.nonzero()]=1 #set all as 1
+            X_interact[inter]=X_interact[inter]+select_mat*select_avg-select_mat*Total_effect
               
         #Sum the Interactions
         Total_interact=[]
