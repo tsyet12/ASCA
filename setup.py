@@ -16,7 +16,7 @@ if os.path.isfile(requirementPath):
 
 
 setup(name='ASCA', 
-version='1.0', 
+version='1.4', 
 license='BSD 2-Clause',
 description="ASCA: ANOVA-simultaneous component analysis",
 author='Sin Yong Teng',

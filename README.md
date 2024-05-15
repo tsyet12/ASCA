@@ -1,5 +1,4 @@
 # ASCA: ANOVA-Simultaneous Component Analysis in Python
-[![DOI](https://zenodo.org/badge/569291256.svg)](https://zenodo.org/badge/latestdoi/569291256)
 
 
 <!-- TABLE OF CONTENTS -->
@@ -82,28 +81,6 @@ pip install git+https://github.com/tsyet12/ASCA
 ![Figure_3](https://user-images.githubusercontent.com/19692103/205872428-245e778e-c805-4dfc-b5d4-0af7c890c9f2.png)
 
 
-```python
-# How the variables are syntaxed
-ASCA.factors
-ASCA.factors_explained
-ASCA.factors_loadings
-ASCA.factors_projected
-ASCA.factors_scores
-ASCA.factors_singular
-
-ASCA.interactions
-ASCA.interaction_explained
-ASCA.interaction_loadings
-ASCA.interaction_projected
-ASCA.interaction_scores
-ASCA.interaction_singular
-
-ASCA.residuals
-ASCA.effects
-
-```
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -119,7 +96,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the Open Sourced BSD-2-Clause License. See [`LICENSE`](https://github.com/tsyet12/ASCA/blob/master/LICENSE) for more information.
+Distributed under the Open Sourced BSD-2-Clause License. See [`LICENSE`](https://github.com/tsyet12/Chemsy/blob/main/LICENSE) for more information.
 
 
 <!-- CONTACT -->
@@ -138,6 +115,3 @@ Jansen, Jeroen J., et al. "ASCA: analysis of multivariate data obtained from an 
 
 ## Acknowledgements
 The research contribution from S.Y. Teng is supported by the European Union's Horizon Europe Research and Innovation Program, under Marie Skłodowska-Curie Actions grant agreement no. 101064585 (MoCEGS).
-
-## Cite this software
-Sin Yong Teng. (2022). tsyet12/ASCA: ASCA ANOVA-Simultaneous Component Analysis (v1.0). Zenodo. https://doi.org/10.5281/zenodo.7404343

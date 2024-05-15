@@ -89,7 +89,7 @@ class ASCA(BaseEstimator):
         #singular_values=np.diag(sv)
         loadings = v 
         projected=_Res@v
-        explained=(sv**2)/np.sum(sv**2)*100
+        explained=(sv**2)/(np.sum(sv**2)*100+np.finfo(float).eps)
         return scores, loadings, projected, singular_values, explained
         
     
